@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1729468081 source:c:\users\bruno\onedrive\Área de trabalho\exerc2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilhadupla.h"
+
+1729463921 c:\users\bruno\onedrive\Área de trabalho\exerc2\pilhadupla.h
+
+1729468968 source:c:\users\bruno\onedrive\Área de trabalho\exerc2\pilhadupla.c
+	<stdio.h>
+	<stdlib.h>
+	"pilhadupla.h"
+
