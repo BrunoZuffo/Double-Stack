@@ -86,7 +86,7 @@ Este projeto foi desenvolvido como exercício prático na universidade por:
 
 **Bruno Zuffo**  
 Estudante de Engenharia de Computação  
-[GitHub](https://github.com/seu-usuario) • [LinkedIn](https://linkedin.com/in/seu-perfil)
+[LinkedIn]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/bruno-zuffo-10088b216/?trk=opento_sprofile_details))
 
 ---
 
