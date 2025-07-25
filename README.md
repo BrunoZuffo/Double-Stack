@@ -1,95 +1,67 @@
-# 🥞 Double Stack
+# 🧩 Pilha Dupla em C | Double Stack in C
 
-Este repositório contém a implementação de uma **pilha dupla (double stack)** em linguagem C. A ideia principal é gerenciar **duas pilhas independentes (A e B)** utilizando **um único vetor compartilhado**, otimizando o uso de memória.
-
-O projeto foi desenvolvido como exercício prático da disciplina de Estrutura de Dados na universidade.
+> 🇧🇷 Versão em português abaixo | English version below 🇺🇸
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🇧🇷 Descrição
 
-- `main.c`: Função principal com testes das operações nas pilhas A e B.
-- `pilhadupla.c`: Implementação das funções de manipulação da pilha dupla.
-- `pilhadupla.h`: Arquivo de cabeçalho com a definição da struct e das funções.
+Projeto acadêmico desenvolvido para treinar o uso de estruturas de dados em C, mais especificamente o uso de uma **pilha dupla** (duas pilhas em um único vetor).
 
----
+O projeto foi construído de forma modular, com um arquivo `.h` contendo as definições da estrutura e das funções, e um `main.c` com a implementação dos testes. Os comandos são executados pelo `main`, não via terminal.
 
-## 🧠 Conceito: Pilha Dupla
+### 📦 Funcionalidades
 
-A pilha dupla utiliza um único vetor (`valores[TAMANHO]`) para armazenar elementos de duas pilhas:
+- Inserção e remoção em duas pilhas distintas (A e B)
+- Compartilhamento de espaço em vetor único (`int valores[TAMANHO]`)
+- Prevenção de sobreposição entre pilhas
+- Controle de topo independente (`topoA`, `topoB`)
 
-- A pilha **A** cresce do início para o fim do vetor.
-- A pilha **B** cresce do fim para o início do vetor.
+### 💻 Linguagens e Tecnologias
 
-Isso permite que o espaço seja utilizado de forma mais eficiente, desde que as pilhas não colidam no meio.
+- **C**
+- Estruturas (`struct`)
+- Vetores estáticos
+- Arquivos `.h` para modularização
 
----
+### 📁 Estrutura dos Arquivos
 
-## ⚙️ Funcionalidades
-
-As principais operações disponíveis são:
-
-- `pushA(pilha, valor)`: Insere um valor na pilha A.
-- `pushB(pilha, valor)`: Insere um valor na pilha B.
-- `popA(pilha)`: Remove o elemento do topo da pilha A.
-- `popB(pilha)`: Remove o elemento do topo da pilha B.
-- `clearA(pilha)`: Remove todos os elementos da pilha A.
-- `clearB(pilha)`: Remove todos os elementos da pilha B.
-- `imprimirA(pilha)`: Imprime os elementos da pilha A.
-- `imprimirB(pilha)`: Imprime os elementos da pilha B.
-
----
-
-## 🧪 Exemplo de uso
-
-O `main.c` já contém uma sequência de comandos que demonstram a utilização das funções.
-
-> ⚠️ **Importante**: Este código **não é interativo via terminal**.  
-> As operações são **pré-definidas em `main.c`**, sendo executadas automaticamente ao rodar o programa.
-
-```c
-Pilha* pilha = criarPilha();
-
-pushA(pilha, 18);
-pushA(pilha, 30);
-imprimirA(pilha);  // [|30|18|]
-
-pushB(pilha, 9);
-pushB(pilha, 23);
-imprimirB(pilha);  // [|23|9|]
-
-clearA(pilha);
-clearB(pilha);
+```
+.
+├── pilhaDupla.h     # Definição da struct e das funções da pilha
+├── main.c           # Execução dos testes e uso das funções
 ```
 
 ---
 
-## 🛠️ Compilação e Execução
+## 🇺🇸 Description
 
-### ✔️ Requisitos
+Academic project developed to practice data structures in C, specifically using a **double stack** (two stacks in a single array).
 
-- Compilador C (como `gcc`)
-- Code::Blocks (opcional, utilizado no desenvolvimento)
+The project is modular, with a `.h` file for the structure and function declarations, and a `main.c` file for testing. Commands are executed through `main.c`, not the terminal.
 
-### 🔧 Compilando via terminal
+### 📦 Features
 
-```bash
-gcc main.c pilhadupla.c -o double_stack
-./double_stack
+- Push and pop operations for two separate stacks (A and B)
+- Shared space using a single integer array (`int valores[TAMANHO]`)
+- Prevents overlap between stacks
+- Independent top control (`topoA`, `topoB`)
+
+### 💻 Languages and Technologies
+
+- **C**
+- Structs
+- Static arrays
+- Header files for modularity
+
+### 📁 File Structure
+
+```
+.
+├── pilhaDupla.h     # Stack struct and function definitions
+├── main.c           # Main file to execute test cases
 ```
 
 ---
 
-## 👨‍💻 Autor
-
-Este projeto foi desenvolvido como exercício prático na universidade por:
-
-**Bruno Zuffo**  
-Estudante de Engenharia de Computação  
-[LinkedIn]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/bruno-zuffo-10088b216/?trk=opento_sprofile_details))
-
----
-
-## 📜 Licença
-
-Este projeto é de uso educacional. Sinta-se livre para estudar, modificar e reutilizar com fins acadêmicos.
+👨‍💻 Developed by [@BrunoZuffo](https://github.com/BrunoZuffo)
