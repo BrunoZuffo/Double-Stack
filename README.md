@@ -23,6 +23,7 @@ The project is modular, with a `.h` file for the structure and function declarat
 ### 📁 File Structure
 
 ```
+.
 ├── pilhaDupla.h     # Stack struct and function definitions
 ├── main.c           # Main file to execute test cases
 ```
