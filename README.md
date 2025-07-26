@@ -1,7 +1,5 @@
 # 🧩 Double Stack in C
 
----
-
 ## Description
 
 Academic project developed to practice data structures in C, specifically using a **double stack** (two stacks in a single array).
